@@ -1,945 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72c0ba43-4a7f-403f-875b-14449fcb228c" name="Default Changelist" comment="test">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scratch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first-build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.github/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.github/ISSUE_TEMPLATE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.idea/scratch-gui.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/.tx/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/TRADEMARK" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/prune-gh-pages.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/action-menu/action-menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/action-menu/action-menu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/action-menu/icon--backdrop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/action-menu/icon--camera.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/action-menu/icon--file-upload.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/action-menu/icon--paint.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/action-menu/icon--search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/action-menu/icon--sprite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/action-menu/icon--surprise.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/alerts/alert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/alerts/alert.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/alerts/alerts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/asset-panel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/asset-panel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/icon--add-backdrop-lib.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/icon--add-blank-costume.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/icon--add-costume-lib.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/icon--add-sound-lib.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/icon--add-sound-record.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/icon--sound-rtl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/icon--sound.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/selector.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/selector.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/asset-panel/sortable-asset.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/audio-trimmer/audio-trimmer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/audio-trimmer/audio-trimmer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/audio-trimmer/icon--handle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/backpack/backpack.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/backpack/backpack.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/blocks/blocks.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/blocks/blocks.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/box/box.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/box/box.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/browser-modal/browser-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/browser-modal/browser-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/browser-modal/unsupported.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/button/button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/button/button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/camera-modal/camera-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/camera-modal/camera-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/camera-modal/icon--back.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/cards/card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/cards/cards.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/cards/icon--close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/cards/icon--next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/cards/icon--prev.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/close-button/close-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/close-button/close-button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/close-button/icon--close-orange.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/close-button/icon--close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/coming-soon/aww-cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/coming-soon/coming-soon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/coming-soon/coming-soon.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/coming-soon/cool-cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/auto-scanning-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/connected-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/connecting-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/connection-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/connection-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/dots.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/error-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/icons/back.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/icons/bluetooth-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/icons/bluetooth.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/icons/cancel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/icons/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/icons/help.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/icons/refresh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/icons/scratchlink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/icons/searching.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/peripheral-tile.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/scanning-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/connection-modal/unavailable-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/context-menu/context-menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/context-menu/context-menu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/controls/controls.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/controls/controls.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/crash-message/crash-message.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/crash-message/crash-message.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/crash-message/reload.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/custom-procedures/custom-procedures.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/custom-procedures/custom-procedures.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/custom-procedures/icon--boolean-input.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/custom-procedures/icon--label.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/custom-procedures/icon--text-input.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/direction-picker/dial.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/direction-picker/dial.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/direction-picker/direction-picker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/direction-picker/direction-picker.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/direction-picker/icon--all-around.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/direction-picker/icon--dial.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/direction-picker/icon--dont-rotate.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/direction-picker/icon--handle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/direction-picker/icon--left-right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/divider/divider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/divider/divider.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/drag-layer/drag-layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/drag-layer/drag-layer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/filter/filter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/filter/filter.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/filter/icon--filter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/filter/icon--x.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/forms/buffered-input-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/forms/input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/forms/input.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/forms/label.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/forms/label.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/green-flag/green-flag.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/green-flag/green-flag.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/green-flag/icon--green-flag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/gui/gui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/gui/gui.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/gui/icon--code.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/gui/icon--costumes.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/gui/icon--extensions.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/gui/icon--sounds.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/icon-button/icon-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/icon-button/icon-button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/import-modal/import-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/import-modal/import-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/language-selector/language-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/language-selector/language-selector.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/language-selector/language-selector.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/library-item/library-item.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/library-item/library-item.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/library/library.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/library/library.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/loader/bottom-block.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/loader/loader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/loader/loader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/loader/middle-block.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/loader/top-block.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/loupe/loupe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/loupe/loupe.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/account-nav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/account-nav.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/dropdown-caret.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/icon--feedback.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/icon--mystuff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/icon--profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/icon--remix.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/icon--see-community.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/login-dropdown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/login-dropdown.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/menu-bar-menu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/menu-bar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/menu-bar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/project-title-input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/project-title-input.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu-bar/scratch-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/menu/menu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/meter/meter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/meter/meter.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/mic-indicator/mic-indicator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/mic-indicator/mic-indicator.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/mic-indicator/mic-indicator.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/modal/modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/modal/modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/monitor-list/monitor-list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/monitor-list/monitor-list.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/monitor/default-monitor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/monitor/large-monitor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/monitor/list-monitor-scroller.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/monitor/list-monitor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/monitor/monitor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/monitor/monitor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/monitor/slider-monitor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/preview-modal/happy-cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/preview-modal/preview-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/preview-modal/preview-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/preview-modal/welcome.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/prompt/icon--dropdown-caret.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/prompt/prompt.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/prompt/prompt.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/question/icon--enter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/question/question.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/question/question.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/record-modal/icon--back.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/record-modal/icon--play.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/record-modal/icon--stop-playback.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/record-modal/icon--stop-recording.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/record-modal/playback-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/record-modal/record-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/record-modal/record-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/record-modal/recording-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--echo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--faster.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--louder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--lounder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--redo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--reverse.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--robot.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--slower.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--softer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--trim-confirm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--trim.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/icon--undo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/sound-editor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sound-editor/sound-editor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-info/icon--draggable-off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-info/icon--draggable-on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-info/icon--hide.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-info/icon--show.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-info/icon--x.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-info/icon--y.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-info/sprite-info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-info/sprite-info.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-selector-item/sprite-selector-item.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-selector-item/sprite-selector-item.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-selector/sprite-list.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-selector/sprite-selector.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/sprite-selector/sprite-selector.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage-header/icon--fullscreen.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage-header/icon--large-stage.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage-header/icon--small-stage.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage-header/icon--unfullscreen.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage-header/stage-header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage-header/stage-header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage-selector/stage-selector.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage-selector/stage-selector.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage-wrapper/stage-wrapper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage-wrapper/stage-wrapper.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage/stage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stage/stage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stop-all/icon--stop-all.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stop-all/stop-all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/stop-all/stop-all.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/tag-button/tag-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/tag-button/tag-button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/target-pane/target-pane.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/target-pane/target-pane.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/turbo-mode/icon--turbo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/turbo-mode/turbo-mode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/turbo-mode/turbo-mode.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/watermark/watermark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/watermark/watermark.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/waveform/waveform.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/waveform/waveform.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/webgl-modal/webgl-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/components/webgl-modal/webgl-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/account-nav.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/alert.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/alerts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/audio-trimmer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/auto-scanning-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/backdrop-library.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/backpack.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/blocks.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/camera-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/cards.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/connection-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/controls.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/costume-library.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/costume-tab.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/custom-procedures.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/deletion-restorer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/direction-picker.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/dom-element-renderer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/drag-layer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/error-boundary.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/extension-library.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/green-flag.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/gui.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/import-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/language-selector.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/list-monitor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/menu-item.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/menu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/monitor-list.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/monitor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/paint-editor-wrapper.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/playback-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/preview-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/prompt.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/question.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/record-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/recording-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/sb-file-uploader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/sb3-downloader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/scanning-step.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/slider-monitor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/sound-editor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/sound-library.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/sound-tab.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/sprite-info.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/sprite-library.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/sprite-selector-item.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/stage-header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/stage-selector.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/stage-wrapper.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/stage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/stop-all.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/tag-button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/target-pane.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/tips-library.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/turbo-mode.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/watermark.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/containers/webgl-modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/css/colors.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/css/typography.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/css/units.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/css/z-index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/examples/extensions/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/examples/extensions/example-extension.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/analytics.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/app-state-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/assets/icon--back.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/assets/icon--help.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/assets/icon--tutorials.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/assets/placeholder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/audio/audio-buffer-player.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/audio/audio-effects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/audio/audio-recorder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/audio/audio-util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/audio/effects/echo-effect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/audio/effects/robot-effect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/audio/effects/volume-effect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/audio/shared-audio-context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/backpack-api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/backpack/code-payload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/backpack/code-thumbnail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/backpack/costume-payload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/backpack/jpeg-thumbnail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/backpack/sound-payload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/backpack/sound-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/backpack/sprite-payload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/blocks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/cloud-provider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/connected-intl-provider.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/default-project/09dc888b0b7df19f70d81588ae73420e.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/default-project/3696356a03a8d938318876a593572843.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/default-project/83a9787d4cb6f3b7632b4ddfebf74367.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/default-project/83c36d806dc92327b9e7049a565c6bff.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/default-project/cd21514d0531fdffb22204e0ec5ed84a.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/default-project/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/default-project/project-data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/detect-locale.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/drag-constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/drag-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/drop-area-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/empty-assets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/error-boundary-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/file-uploader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/font-loader-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/get-costume-url.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/hash-parser-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/layout-constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/backdrop-tags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/backdrops.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/costumes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/animate/animate-name-change-color.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/animate/animate-name-grow.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/animate/animate-name-pick-a-letter.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/animate/animate-name-pick-a-letter2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/animate/animate-name-play-sound.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/animate/animate-name-spin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/animate/lib_animate-a-name.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/01_cn-pick-character.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/02_cn-say-something.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/03_cn-glide-around.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/04_cn-collect.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/05_cn-add-score.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/06_cn-keep-score.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/07_cn-level-up.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/08_cn-pick-another-character.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/09_cn-level-up-say-something.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/10_cn-animate-run.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/cartoonnetwork/lib_CartoonNetwork.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/chase-game-add-backdrop.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/chase-game-add-sprite1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/chase-game-add-sprite2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/chase-game-add-variable.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/chase-game-change-score.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/chase-game-move-randomly.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/chase-game-move-rightleft.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/chase-game-move-updown.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/chase-game-touching-score.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/chase-game-touching.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/chase-game/lib-chasegame.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/game/game-add-score.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/game/game-change-color.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/game/game-change-score.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/game/game-pick-sprite.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/game/game-play-sound.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/game/game-random-position.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/game/game-reset-score.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/game/lib-pop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/intro/intro-coverimage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/intro/intro1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/intro/intro2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/intro/lib-getting-started.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/make-music/lib-make-music.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/make-music/make-music-beatbox.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/make-music/make-music-make-beat.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/make-music/make-music-make-song.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/make-music/make-music-pick-instrument.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/make-music/make-music-play-sound.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/sprite/cover-add-sprite.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/sprite/intro-choose-sprite.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/translate-video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/01_hoc-add-extensions.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/02_hoc-say-something.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/03_hoc-set-voice.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/04_hoc-move-around.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/05_hoc-add-backdrop.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/06_hoc-add-character.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/07_hoc-perform-song.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/08_hoc-color-click.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/09_hoc-spin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/10_hoc-grow-shrink.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/txt/lib_txt-to-speech.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/videos/add-backdrop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/videos/add-effects.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/videos/animate-sprite.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/videos/change-size.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/videos/glide-around.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/videos/hide-and-show.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/videos/move-arrow-keys.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/videos/record-a-sound.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/decks/videos/spin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/boost.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/ev3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/microbit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/music.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/pen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/peripheral-connection/ev3/ev3-hub-illustration.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/peripheral-connection/ev3/ev3-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/peripheral-connection/microbit/microbit-illustration.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/peripheral-connection/microbit/microbit-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/peripheral-connection/wedo/wedo-button-illustration.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/peripheral-connection/wedo/wedo-illustration.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/peripheral-connection/wedo/wedo-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/speech.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/text2speech.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/translate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/video-sensing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/extensions/wedo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/sound-tags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/sounds.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/sprite-tags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/sprites.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/tag-messages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/libraries/tutorial-tags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/locale-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/localization-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/make-toolbox-xml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/monitor-adapter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/opcode-labels.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/project-fetcher-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/project-saver-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/screen-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/shared-messages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/sortable-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/supported-browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/tablet-full-screen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/titled-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/touch-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/tutorial-from-url.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/variable-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/video/camera.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/video/modal-video-manager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/video/video-provider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/vm-listener-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/lib/vm-manager-hoc.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/playground/blocks-only.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/playground/blocks-only.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/playground/compatibility-testing.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/playground/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/playground/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/playground/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/playground/player.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/playground/player.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/playground/render-gui.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/alerts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/asset-drag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/block-drag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/cards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/color-picker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/connection-modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/custom-procedures.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/editor-tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/gui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/hovered-target.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/locales.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/menus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/mic-indicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/modals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/mode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/monitor-layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/monitors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/project-state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/project-title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/restore-deletion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/stage-size.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/targets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/toolbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/vm-status.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/reducers/vm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/src/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/__mocks__/audio-buffer-player.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/__mocks__/audio-effects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/__mocks__/fileMock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/__mocks__/styleMock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/helpers/enzyme-setup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/helpers/intl-helpers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/helpers/selenium-helper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/integration/backpack.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/integration/blocks.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/integration/costumes.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/integration/examples.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/integration/how-tos.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/integration/localization.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/integration/menu-bar.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/integration/project-loading.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/integration/sounds.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/integration/sprites.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/smoke/browser.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/components/__snapshots__/button.test.jsx.snap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/components/__snapshots__/icon-button.test.jsx.snap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/components/__snapshots__/sound-editor.test.jsx.snap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/components/__snapshots__/sprite-selector-item.test.jsx.snap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/components/button.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/components/controls.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/components/icon-button.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/components/sound-editor.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/components/sprite-selector-item.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/containers/__snapshots__/green-flag.test.jsx.snap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/containers/green-flag.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/containers/sb-file-uploader.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/containers/sound-editor.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/containers/sprite-selector-item.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/reducers/monitor-layout-reducer.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/reducers/project-state-reducer.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/audio-effects.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/audio-util.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/detect-locale.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/drag-utils.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/get-costume-url.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/hash-project-loader-hoc.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/project-fetcher-hoc.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/project-saver-hoc.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/translate-video.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/tutorial-from-url.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/test/unit/util/vm-manager-hoc.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-gui/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.github/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.github/ISSUE_TEMPLATE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.jsdoc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/.tx/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/TRADEMARK" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/blocks/scratch3_control.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/blocks/scratch3_data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/blocks/scratch3_event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/blocks/scratch3_looks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/blocks/scratch3_motion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/blocks/scratch3_operators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/blocks/scratch3_procedures.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/blocks/scratch3_sensing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/blocks/scratch3_sound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/dispatch/central-dispatch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/dispatch/shared-dispatch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/dispatch/worker-dispatch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/adapter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/block-utility.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/blocks-execute-cache.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/blocks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/execute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/monitor-record.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/mutation-adapter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/profiler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/runtime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/scratch-blocks-constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/sequencer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/stage-layering.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/target.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/thread.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/engine/variable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extension-support/argument-type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extension-support/block-type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extension-support/define-messages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extension-support/extension-manager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extension-support/extension-metadata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extension-support/extension-worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extension-support/reporter-scope.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extension-support/target-type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_ev3/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_microbit/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/1-snare.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/10-wood-block.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/11-cowbell.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/12-triangle.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/13-bongo.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/14-conga.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/15-cabasa.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/16-guiro.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/17-vibraslap.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/18-cuica.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/2-bass-drum.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/3-side-stick.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/4-crash-cymbal.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/5-open-hi-hat.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/6-closed-hi-hat.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/7-tambourine.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/8-hand-clap.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/drums/9-claves.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/108.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/24.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/36.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/48.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/72.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/84.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/96.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/10-clarinet/48.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/10-clarinet/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/11-saxophone/36.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/11-saxophone/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/11-saxophone/84.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/12-flute/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/12-flute/72.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/13-wooden-flute/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/13-wooden-flute/72.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/14-bassoon/36.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/14-bassoon/48.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/14-bassoon/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/15-choir/48.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/15-choir/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/15-choir/72.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/16-vibraphone/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/16-vibraphone/72.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/17-music-box/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/18-steel-drum/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/19-marimba/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/2-electric-piano/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/20-synth-lead/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/21-synth-pad/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/3-organ/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/4-guitar/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/5-electric-guitar/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/6-bass/36.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/6-bass/48.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/7-pizzicato/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/8-cello/36.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/8-cello/48.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/8-cello/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/9-trombone/36.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/9-trombone/48.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/assets/instruments/9-trombone/60.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_music/manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_nxt/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_pen/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_speech2text/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_text2speech/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_translate/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_video_sensing/debug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_video_sensing/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_video_sensing/library.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_video_sensing/math.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_video_sensing/view.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_wedo2/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/import/load-costume.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/import/load-sound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/io/ble.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/io/bt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/io/clock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/io/cloud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/io/deviceManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/io/keyboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/io/mouse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/io/mouseWheel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/io/userData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/io/video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/playground/benchmark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/playground/benchmark.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/playground/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/playground/suite.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/playground/suite.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/playground/suite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/playground/video-sensing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/playground/video-sensing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/serialization/deserialize-assets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/serialization/sb2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/serialization/sb2_specmap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/serialization/sb3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/serialization/serialize-assets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/sprites/rendered-target.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/sprites/sprite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/base64-util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/cast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/clone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/color.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/jsonrpc-web-socket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/jsonrpc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/math-util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/maybe-format-message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/rateLimiter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/string-util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/task-queue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/timer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/uid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/util/xml-escape.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/src/virtual-machine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/block-to-workspace-comments-without-scripts.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/block-to-workspace-comments.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/clone-cleanup.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/comments.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/comments.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/comments_no_duplicate_id_serialization.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/complex.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/control.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/data.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/default.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/demo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/dispatch-test-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/dispatch-test-worker-shim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/dispatch-test-worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/event.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/events.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/example_sprite.sprite2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/control-if-false-then-else.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/control-if-false-then.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/control-if-true-then-else.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/control-if-true-then.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/data-operators-global.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/data-operators-local.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/data-reporter-contents-global.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/data-reporter-contents-local.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/event-when-green-flag.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/events-broadcast-and-wait-yields-a-tick.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/monitors-stage-name.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/operators-not-blank.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-changes-back-2-broadcast-wait.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-changes-backwards-2-broadcast-and-wait-repeat-message.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-changes-backwards-2-broadcast-and-wait.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-changes-backwards-2-broadcast-no-wait.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-changes-backwards-2-broadcast-wait.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-changes-backwards-2-continuous.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-changes-backwards-2-threads-broadcast-wait.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-changes-forewards-2-broadcast-wait.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-changes-front-2-broadcast-wait.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-clones-backwards-2-broadcast-wait.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-clones-backwards-broadcast-wait.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-clones-static-2.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-immobile-stage.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-library-reverse.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-library-reverse.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-library.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/order-library.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-boolean-reporter-bug.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-nested-missing-boolean-param.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-nested-missing-number-param.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-nested-missing-string-param.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-number-number-boolean.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-param-outside-boolean.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-param-outside-number.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-param-outside-string.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-recursive-default-boolean.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-recursive-default-number.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/execute/procedures-recursive-default-string.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/fake-renderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/hat-execution-order.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/invisible-video-monitor.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/ev3-simple-project.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/microbit-simple-project.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/music-simple-project.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/music-simple-project.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/pen-dolphin-3d.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/pen-dolphin-3d.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/pen-simple-project.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/pen-simple-project.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/text2speech-simple-project.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/wedo2-simple-project.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/load-extensions/wedo2-simple-project.sb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/looks.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/loudness-hat-block.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/make-test-storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/monitors.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/motion.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/offline-custom-assets.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/ordering.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/pen.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/procedure.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/readProjectFile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/saythink-and-wait.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/sensing.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/sound.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/sprite.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/stack-click.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/test-compare.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/unknown-opcode-in-c-block.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/unknown-opcode.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/fixtures/when-clicked.sb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/addSprite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/block_to_workspace_comment_import.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/block_to_workspace_comment_import_no_scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/clone-cleanup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/comments_sb3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/complex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/control.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/delete-and-restore-sprite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/execute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/hat-execution-order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/hat-threads-run-every-frame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/import-sb2-from-object.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/import_sb2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/internal-extension.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/load-extensions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/looks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/monitor-threads-run-every-frame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/monitors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/motion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/offline-custom-assets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/pen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/procedure.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/saythink-and-wait.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/sb3-roundtrip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/sensing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/sound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/stack-click.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/unknown-opcode-in-c-block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/integration/unknown-opcode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/blocks_control.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/blocks_data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/blocks_event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/blocks_looks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/blocks_operators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/blocks_procedures.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/blocks_sensing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/blocks_sounds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/dispatch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/engine_adapter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/engine_blocks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/engine_runtime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/engine_sequencer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/engine_target.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/engine_thread.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/extension_conversion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/extension_microbit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/extension_music.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/extension_video_sensing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/extension_video_sensing_center.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/extension_video_sensing_down-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/extension_video_sensing_left-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/extension_video_sensing_left-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/io_clock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/io_cloud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/io_deviceManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/io_keyboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/io_mouse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/io_mousewheel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/io_scratchBLE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/io_scratchBT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/io_userData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/maybe_format_message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/serialization_sb2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/serialization_sb3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/sprites_rendered-target.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_base64.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_cast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_color.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_jsonrpc-web-socket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_jsonrpc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_math.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_rateLimiter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_string.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_task-queue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_timer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/util_xml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/test/unit/virtual-machine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch-vm/webpack.config.js" afterDir="false" />
+    <list default="true" id="72c0ba43-4a7f-403f-875b-14449fcb228c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch-gui/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scratch-gui/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch-gui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scratch-gui/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_nxt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_nxt/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -957,13 +23,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="md" value="474" />
           <entry key="sh" value="49" />
-          <entry key="txt" value="4" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="53" />
+          <entry key="Markdown" value="474" />
+          <entry key="PLAIN_TEXT" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -973,11 +41,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="md" value="1" />
           <entry key="sh" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -994,11 +64,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="70">
+                <caret line="5" column="187" selection-start-line="5" selection-start-column="187" selection-end-line="5" selection-end-column="187" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -1020,6 +102,7 @@
       <list>
         <option value="$PROJECT_DIR$/first-build.sh" />
         <option value="$PROJECT_DIR$/build.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -2872,7 +1955,6 @@
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/ify-loader/package.json" />
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/ignore/package.json" />
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/immediate/package.json" />
-      <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/immutable/package.json" />
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/import-local/package.json" />
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/imports-loader/node_modules/loader-utils/package.json" />
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/imports-loader/node_modules/source-map/package.json" />
@@ -3672,7 +2754,6 @@
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/tap/node_modules/source-map/package.json" />
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/tap/package.json" />
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/tapable/package.json" />
-      <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/text-encoding/package.json" />
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/text-table/package.json" />
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/through/package.json" />
       <path value="$PROJECT_DIR$/scratch-gui/node_modules/scratch-vm/node_modules/through2/package.json" />
@@ -4805,7 +3886,6 @@
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/ify-loader/package.json" />
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/ignore/package.json" />
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/immediate/package.json" />
-      <path value="$PROJECT_DIR$/scratch-vm/node_modules/immutable/package.json" />
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/import-local/package.json" />
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/imports-loader/node_modules/loader-utils/package.json" />
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/imports-loader/node_modules/source-map/package.json" />
@@ -5605,7 +4685,6 @@
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/tap/node_modules/source-map/package.json" />
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/tap/package.json" />
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/tapable/package.json" />
-      <path value="$PROJECT_DIR$/scratch-vm/node_modules/text-encoding/package.json" />
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/text-table/package.json" />
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/through/package.json" />
       <path value="$PROJECT_DIR$/scratch-vm/node_modules/through2/package.json" />
@@ -5804,7 +4883,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541147272565" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541151735924" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -5835,7 +4914,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541145994905</updated>
-      <workItem from="1541145996143" duration="1146000" />
+      <workItem from="1541145996143" duration="2132000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1541146548400</created>
@@ -5844,11 +4923,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541146548401</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First push">
+      <created>1541147318936</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541147318936</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1146000" />
+    <option name="totallyTimeSpent" value="2132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1918" y="-1" width="1924" height="1060" extended-state="0" />
@@ -5860,10 +4946,10 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32975295" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -5892,6 +4978,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/scratch-blocks" />
       <path value="$PROJECT_DIR$/scratch-gui" />
@@ -5899,7 +4987,8 @@
       <path value="$PROJECT_DIR$/scratch-vm" />
     </ignored-roots>
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="First push" />
+    <option name="LAST_COMMIT_MESSAGE" value="First push" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/first-build.sh">
@@ -5912,7 +5001,17 @@
     <entry file="file://$PROJECT_DIR$/build.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="70">
+            <caret line="5" column="187" selection-start-line="5" selection-start-column="187" selection-end-line="5" selection-end-column="187" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
