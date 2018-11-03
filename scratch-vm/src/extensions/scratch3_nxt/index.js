@@ -196,7 +196,6 @@ class EV3 {
     }
 
     stopAllMotors () {
-        this.tmpPower = this.power;
         this.power = 0;
     }
 
