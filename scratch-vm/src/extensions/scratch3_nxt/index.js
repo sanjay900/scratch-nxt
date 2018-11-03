@@ -53,7 +53,7 @@ const NxtSensorMode = {
     BOOLEAN: 0x20
 };
 
-const SteeringType = ['TANK', 'Front Steering'];
+const SteeringType = ['TANK', 'FRONT_STEERING'];
 
 class EV3 {
 
@@ -114,7 +114,8 @@ class EV3 {
          * @private
          */
         this._pollingCounter = 0;
-        this.power = 100;
+        this.power = 0;
+        this.tmpPower = 100;
         this.angle = 0;
         this.steeringConfig = SteeringConfig.FRONT_STEERING;
 
@@ -158,7 +159,10 @@ class EV3 {
     }
 
     writeConfig () {
-        const message = `B${this.steeringConfig}23`;
+        let message = `B${this.steeringConfig}25`;
+        if (this.steeringConfig === SteeringConfig.TANK) {
+            message = `B${this.steeringConfig}23`;
+        }
         this.send(Uint8Array.of(
             Ev3Command.DIRECT_COMMAND_NO_REPLY,
             0x09,
@@ -192,8 +196,8 @@ class EV3 {
     }
 
     stopAllMotors () {
+        this.tmpPower = this.power;
         this.power = 0;
-        this.angle = 0;
     }
 
 
@@ -343,7 +347,8 @@ class EV3 {
         for (let i = 0; i < 3; i++) {
             this._getInputValues(i);
         }
-        const message = `A${this.numberToNXT(this.angle)}${this.numberToNXT(this.power)}`;
+        const powerMul = this.steeringConfig === SteeringConfig.FRONT_STEERING ? -1 : 1;
+        const message = `A${this.numberToNXT(this.angle)}${this.numberToNXT(powerMul * this.power)}`;
         this.send(Uint8Array.of(
             Ev3Command.DIRECT_COMMAND_NO_REPLY,
             0x09,
@@ -468,6 +473,15 @@ class Scratch3Ev3Blocks {
             showStatusButton: true,
             blocks: [
                 {
+                    opcode: 'stopAllMotors',
+                    text: formatMessage({
+                        id: 'nxt.stopAllMotors',
+                        default: 'Stop',
+                        description: 'Stop'
+                    }),
+                    blockType: BlockType.COMMAND
+                },
+                {
                     opcode: 'motorTurnClockwise',
                     text: formatMessage({
                         id: 'nxt.motorTurnClockwise',
@@ -489,7 +503,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorForwards',
                     text: formatMessage({
                         id: 'nxt.motorForwards',
-                        default: 'Drive forwards',
+                        default: 'Drive Forwards',
                         description: 'drive forwards'
                     }),
                     blockType: BlockType.COMMAND
@@ -644,13 +658,21 @@ class Scratch3Ev3Blocks {
     }
 
     motorForwards () {
-        this._peripheral.power = Math.abs(this._peripheral.power);
-        this._peripheral.angle = 0;
+        this._peripheral.power = Math.abs(this._peripheral.tmpPower);
+        if (this._peripheral.steeringConfig === SteeringConfig.TANK) {
+            this._peripheral.angle = 0;
+        }
+    }
+
+    stopAllMotors () {
+        this._peripheral.power = 0;
     }
 
     motorBackwards () {
-        this._peripheral.power = -Math.abs(this._peripheral.power);
-        this._peripheral.angle = 0;
+        this._peripheral.power = -Math.abs(this._peripheral.tmpPower);
+        if (this._peripheral.steeringConfig === SteeringConfig.TANK) {
+            this._peripheral.angle = 0;
+        }
     }
 
     setMotorConfig (args) {
@@ -660,18 +682,24 @@ class Scratch3Ev3Blocks {
 
     motorTurnClockwise () {
         this._peripheral.angle = -45;
+        if (this._peripheral.steeringConfig === SteeringConfig.TANK) {
+            this._peripheral.power = this._peripheral.tmpPower;
+        }
     }
 
     motorTurnCounterClockwise () {
         this._peripheral.angle = 45;
+        if (this._peripheral.steeringConfig === SteeringConfig.TANK) {
+            this._peripheral.power = this._peripheral.tmpPower;
+        }
     }
 
     motorSetAngle (args) {
-        this._peripheral.power = MathUtil.clamp(Cast.toNumber(args.ANGLE), -90, 90);
+        this._peripheral.angle = MathUtil.clamp(Cast.toNumber(args.ANGLE), -90, 90);
     }
 
     motorSetPower (args) {
-        this._peripheral.power = MathUtil.clamp(Cast.toNumber(args.POWER), -100, 100);
+        this._peripheral.tmpPower = this._peripheral.power = MathUtil.clamp(Cast.toNumber(args.POWER), -100, 100);
     }
 
     getMotorPosition (args) {
