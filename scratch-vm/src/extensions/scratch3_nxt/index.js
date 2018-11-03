@@ -476,7 +476,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'stopAllMotors',
                     text: formatMessage({
                         id: 'nxt.stopAllMotors',
-                        default: 'Stop',
+                        default: 'stop',
                         description: 'Stop'
                     }),
                     blockType: BlockType.COMMAND
@@ -485,7 +485,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorTurnClockwise',
                     text: formatMessage({
                         id: 'nxt.motorTurnClockwise',
-                        default: 'Turn Left',
+                        default: 'turn left',
                         description: 'Turn the robot left'
                     }),
                     blockType: BlockType.COMMAND
@@ -494,7 +494,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorTurnCounterClockwise',
                     text: formatMessage({
                         id: 'nxt.motorTurnCounterClockwise',
-                        default: 'Turn Right',
+                        default: 'turn right',
                         description: 'turn the robot right'
                     }),
                     blockType: BlockType.COMMAND
@@ -503,7 +503,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorForwards',
                     text: formatMessage({
                         id: 'nxt.motorForwards',
-                        default: 'Drive Forwards',
+                        default: 'drive forwards',
                         description: 'drive forwards'
                     }),
                     blockType: BlockType.COMMAND
@@ -512,7 +512,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorBackwards',
                     text: formatMessage({
                         id: 'nxt.motorBackwards',
-                        default: 'Drive backwards',
+                        default: 'drive backwards',
                         description: 'drive backwards'
                     }),
                     blockType: BlockType.COMMAND
@@ -521,7 +521,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorSetPower',
                     text: formatMessage({
                         id: 'nxt.motorSetPower',
-                        default: 'set power [POWER] %',
+                        default: 'set power to [POWER] %',
                         description: 'set the driving power to some value'
                     }),
                     blockType: BlockType.COMMAND,
@@ -536,7 +536,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorSetAngle',
                     text: formatMessage({
                         id: 'nxt.motorSetAngle',
-                        default: 'set angle [ANGLE] degrees',
+                        default: 'set angle to [ANGLE] degrees',
                         description: 'set the driving angle to some value'
                     }),
                     blockType: BlockType.COMMAND,
@@ -606,7 +606,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'buttonPressed',
                     text: formatMessage({
                         id: 'nxt.buttonPressed',
-                        default: 'Bumper Hit?',
+                        default: 'bumper hit?',
                         description: 'Has the bumpter been hit?'
                     }),
                     blockType: BlockType.BOOLEAN
@@ -615,7 +615,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'getBrightness',
                     text: formatMessage({
                         id: 'nxt.getBrightness',
-                        default: 'Brightness',
+                        default: 'brightness',
                         description: 'gets measured brightness'
                     }),
                     blockType: BlockType.REPORTER
