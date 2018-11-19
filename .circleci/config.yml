@@ -31,7 +31,7 @@ jobs:
               - v1-dependencies-
         - run: ls
 
-        - run: ./first-build.sh
+        - run: sudo ./first-build.sh
 
         - save_cache:
               paths:
