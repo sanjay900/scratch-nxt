@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="72c0ba43-4a7f-403f-875b-14449fcb228c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch-gui/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scratch-gui/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratch-gui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scratch-gui/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_nxt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scratch-vm/src/extensions/scratch3_nxt/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +15,7 @@
     <session id="1488277806">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -25,13 +24,13 @@
         <counts>
           <entry key="md" value="474" />
           <entry key="sh" value="49" />
-          <entry key="txt" value="14" />
+          <entry key="txt" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="474" />
-          <entry key="PLAIN_TEXT" value="63" />
+          <entry key="PLAIN_TEXT" value="151" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -4883,7 +4882,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541151735924" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541151777875" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -4914,7 +4913,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541145994905</updated>
-      <workItem from="1541145996143" duration="2132000" />
+      <workItem from="1541145996143" duration="2326000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1541146548400</created>
@@ -4930,15 +4929,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541147318936</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Use custom motor control application instead of direct commands">
+      <created>1541151772158</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541151772158</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2132000" />
+    <option name="totallyTimeSpent" value="2326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1918" y="-1" width="1924" height="1060" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
@@ -4988,7 +4993,8 @@
     </ignored-roots>
     <MESSAGE value="test" />
     <MESSAGE value="First push" />
-    <option name="LAST_COMMIT_MESSAGE" value="First push" />
+    <MESSAGE value="Use custom motor control application instead of direct commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use custom motor control application instead of direct commands" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/first-build.sh">

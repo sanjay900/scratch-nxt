@@ -8,6 +8,10 @@ import extensionData from '../lib/libraries/extensions/index.jsx';
 import {connect} from 'react-redux';
 import {closeConnectionModal} from '../reducers/modals';
 
+export const SteeringConfig = {
+    FRONT_STEERING: '0',
+    TANK: '1'
+};
 class ConnectionModal extends React.Component {
     constructor (props) {
         super(props);
@@ -18,27 +22,36 @@ class ConnectionModal extends React.Component {
             'handleConnecting',
             'handleDisconnect',
             'handleError',
-            'handleHelp'
+            'handleHelp',
+            'handleSetDriveType'
         ]);
         this.state = {
             extension: extensionData.find(ext => ext.extensionId === props.extensionId),
+            driveType: SteeringConfig.FRONT_STEERING,
+            uploading: false,
             phase: props.vm.getPeripheralIsConnected(props.extensionId) ?
                 PHASES.connected : PHASES.scanning
         };
     }
+
     componentDidMount () {
+        this.props.vm.runtime.on('NXT_PROGRAM_EXISTS', () => this.uploadNXTProgram(false));
+        this.props.vm.runtime.on('NXT_PROGRAM_MISSING', () => this.uploadNXTProgram(true));
         this.props.vm.on('PERIPHERAL_CONNECTED', this.handleConnected);
         this.props.vm.on('PERIPHERAL_REQUEST_ERROR', this.handleError);
     }
+
     componentWillUnmount () {
         this.props.vm.removeListener('PERIPHERAL_CONNECTED', this.handleConnected);
         this.props.vm.removeListener('PERIPHERAL_REQUEST_ERROR', this.handleError);
     }
+
     handleScanning () {
         this.setState({
             phase: PHASES.scanning
         });
     }
+
     handleConnecting (peripheralId) {
         this.props.vm.connectPeripheral(this.props.extensionId, peripheralId);
         this.setState({
@@ -50,6 +63,7 @@ class ConnectionModal extends React.Component {
             label: this.props.extensionId
         });
     }
+
     handleDisconnect () {
         try {
             this.props.vm.disconnectPeripheral(this.props.extensionId);
@@ -57,6 +71,7 @@ class ConnectionModal extends React.Component {
             this.props.onCancel();
         }
     }
+
     handleCancel () {
         try {
             // If we're not connected to a peripheral, close the websocket so we stop scanning.
@@ -68,6 +83,7 @@ class ConnectionModal extends React.Component {
             this.props.onCancel();
         }
     }
+
     handleError () {
         // Assume errors that come in during scanning phase are the result of not
         // having scratch-link installed.
@@ -86,7 +102,32 @@ class ConnectionModal extends React.Component {
             });
         }
     }
+
+    uploadNXTProgram (shouldUpload) {
+        console.log("UPLOAD", shouldUpload);
+        this.setState({
+            phase: PHASES.uploading,
+            uploading: shouldUpload
+        });
+        analytics.event({
+            category: 'extensions',
+            action: 'uploading',
+            label: this.props.extensionId
+        });
+    }
+
+    handleSetDriveType (driveType) {
+        this.props.vm.runtime.emit('NXT_MOTOR_CONFIG', driveType);
+        this.setState({
+            phase: PHASES.connected
+        });
+    }
+
+
     handleConnected () {
+        if (this.props.extensionId === 'nxt') {
+            return;
+        }
         this.setState({
             phase: PHASES.connected
         });
@@ -96,6 +137,7 @@ class ConnectionModal extends React.Component {
             label: this.props.extensionId
         });
     }
+
     handleHelp () {
         window.open(this.state.extension.helpLink, '_blank');
         analytics.event({
@@ -104,15 +146,18 @@ class ConnectionModal extends React.Component {
             label: this.props.extensionId
         });
     }
+
     render () {
         return (
             <ConnectionModalComponent
                 connectingMessage={this.state.extension.connectingMessage}
+                driveType={this.state.driveType}
                 extensionId={this.props.extensionId}
                 name={this.state.extension.name}
                 peripheralButtonImage={this.state.extension.peripheralButtonImage}
                 peripheralImage={this.state.extension.peripheralImage}
                 phase={this.state.phase}
+                shouldUpload={this.state.uploading}
                 smallPeripheralImage={this.state.extension.smallPeripheralImage}
                 title={this.props.extensionId}
                 useAutoScan={this.state.extension.useAutoScan}
@@ -123,6 +168,7 @@ class ConnectionModal extends React.Component {
                 onDisconnect={this.handleDisconnect}
                 onHelp={this.handleHelp}
                 onScanning={this.handleScanning}
+                onSetDriveType={this.handleSetDriveType}
             />
         );
     }

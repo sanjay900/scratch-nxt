@@ -6,6 +6,7 @@ const BT = require('../../io/bt');
 const Base64Util = require('../../util/base64-util');
 const MathUtil = require('../../util/math-util');
 const log = require('../../util/log');
+const PROGRAM = require('./program');
 
 /**
  * Icon svg to be displayed at the left edge of each extension block, encoded as a data URI.
@@ -21,10 +22,49 @@ const blockIconURI = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNv
  * @readonly
  * @enum {number}
  */
-const Ev3Command = {
+const NxtResponse = {
     DIRECT_COMMAND_REPLY: 0x00,
     DIRECT_COMMAND_NO_REPLY: 0x80,
-    DIRECT_REPLY: 0x02
+    DIRECT_REPLY: 0x02,
+    SYSTEM_COMMAND_RESPONSE: 0x01,
+    SYSTEM_COMMAND_NO_RESPONSE: 0x81
+};
+
+const NxtCommand = {
+    OPEN_READ: 0x80,
+    OPEN_WRITE: 0x81,
+    READ: 0x82,
+    WRITE: 0x83,
+    CLOSE: 0x84,
+    DELETE: 0x85,
+    FIND_FIRST: 0x86,
+    FIND_NEXT: 0x87,
+    GET_FIRMWARE_VERSION: 0x88,
+    OPEN_WRITE_LINEAR: 0x89,
+    OPEN_READ_LINEAR: 0x8A,
+    OPEN_WRITE_DATA: 0x8B,
+    OPEN_APPEND_DATA: 0x8C,
+    SET_BRICK_NAME: 0x98,
+    GET_DEVICE_INFO: 0x9B,
+    START_PROGRAM: 0x00,
+    STOP_PROGRAM: 0x01,
+    PLAY_SOUND_FILE: 0x02,
+    PLAY_TONE: 0x03,
+    SET_OUTPUT_STATE: 0x04,
+    SET_INPUT_MODE: 0x05,
+    GET_OUTPUT_STATE: 0x06,
+    GET_INPUT_VALUES: 0x07,
+    RESET_INPUT_SCALED_VALUE: 0x08,
+    MESSAGE_WRITE: 0x09,
+    RESET_MOTOR_POSITION: 0x0A,
+    GET_BATTERY_LEVEL: 0x0B,
+    STOP_SOUND_PLAYBACK: 0x0C,
+    KEEP_ALIVE: 0x0D,
+    LS_GET_STATUS: 0x0E,
+    LS_WRITE: 0x0F,
+    LS_READ: 0x10,
+    GET_CURRENT_PROGRAM_NAME: 0x11,
+    MESSAGE_READ: 0x13
 };
 
 const NxtSensor = {
@@ -53,12 +93,16 @@ const NxtSensorMode = {
     BOOLEAN: 0x20
 };
 
+const FileUploadState = {
+    CLOSED: 0x00,
+    OPEN: 0x01
+};
+
 const SteeringType = ['TANK', 'Front Steering'];
 
 class EV3 {
 
     constructor (runtime, extensionId) {
-
         /**
          * The Scratch 3.0 runtime used to trigger the green flag button.
          * @type {Runtime}
@@ -66,6 +110,7 @@ class EV3 {
          */
         this._runtime = runtime;
         this._runtime.on('PROJECT_STOP_ALL', this.stopAll.bind(this));
+        this._runtime.on('NXT_MOTOR_CONFIG', steeringConfig => (this.steeringConfig = steeringConfig));
         this.data = [];
 
         /**
@@ -129,6 +174,12 @@ class EV3 {
         this._onConnect = this._onConnect.bind(this);
         this._onMessage = this._onMessage.bind(this);
         this._pollValues = this._pollValues.bind(this);
+        this.fileData = PROGRAM;
+        this.state = FileUploadState.CLOSED;
+        this.prog = this.writeAsciiZ('SteeringControl.rxe'.padEnd(19, '\0'));
+        this.progSize = this.writeLong(PROGRAM.length);
+        this.handle = 0;
+
 
     }
 
@@ -157,11 +208,15 @@ class EV3 {
         return data;
     }
 
+    writeLong (long) {
+        return [long, long >> 8, long >> 16, long >> 24];
+    }
+
     writeConfig () {
         const message = `B${this.steeringConfig}23`;
         this.send(Uint8Array.of(
-            Ev3Command.DIRECT_COMMAND_NO_REPLY,
-            0x09,
+            NxtResponse.DIRECT_COMMAND_NO_REPLY,
+            NxtCommand.MESSAGE_WRITE,
             0,
             message.length + 1,
             ...this.writeAsciiZ(message)));
@@ -171,7 +226,8 @@ class EV3 {
         const start = number < 0 ? '-' : '0';
         number = Math.round(number);
         number = Math.abs(number);
-        return start + Array(Math.max(3 - String(number).length + 1, 0)).join('0') + number;
+        return start + Array(Math.max(3 - String(number).length + 1, 0))
+            .join('0') + number;
     }
 
     isButtonPressed () {
@@ -179,7 +235,12 @@ class EV3 {
     }
 
     beep (freq, time) {
-        return this.send(Uint8Array.of(Ev3Command.DIRECT_COMMAND_NO_REPLY, 0x03, freq, freq >> 8, time, time >> 8));
+        return this.send(Uint8Array.of(
+            NxtResponse.DIRECT_COMMAND_NO_REPLY,
+            NxtCommand.PLAY_TONE,
+            freq, freq >> 8,
+            time, time >> 8
+        ));
     }
 
     stopAll () {
@@ -188,7 +249,7 @@ class EV3 {
     }
 
     stopSound () {
-        return this.send(Uint8Array.of(Ev3Command.DIRECT_COMMAND_NO_REPLY, 0x0C));
+        return this.send(Uint8Array.of(NxtResponse.DIRECT_COMMAND_NO_REPLY, NxtCommand.STOP_SOUND_PLAYBACK));
     }
 
     stopAllMotors () {
@@ -244,7 +305,7 @@ class EV3 {
      */
     send (message) {
         if (!this.isConnected()) return Promise.resolve();
-
+        console.log('SENT', message);
         return this._bt.sendMessage({
             message: Base64Util.uint8ArrayToBase64(Uint8Array.of(message.length, message.length >> 8, ...message)),
             encoding: 'base64'
@@ -252,15 +313,46 @@ class EV3 {
     }
 
     _setInputMode (port, type, mode) {
-        return this.send(Uint8Array.of(Ev3Command.DIRECT_COMMAND_NO_REPLY, 0x05, port, type, mode));
+        return this.send(Uint8Array.of(
+            NxtResponse.DIRECT_COMMAND_NO_REPLY,
+            NxtCommand.SET_INPUT_MODE,
+            port,
+            type,
+            mode
+        ));
+    }
+
+    _startProgram () {
+        return this.send(Uint8Array.of(NxtResponse.DIRECT_COMMAND_REPLY, NxtCommand.START_PROGRAM, ...this.prog));
+    }
+
+    _uploadProgram () {
+        if (this.state === FileUploadState.CLOSED) {
+            this.state = FileUploadState.OPEN;
+            return this.send(Uint8Array.of(
+                NxtResponse.SYSTEM_COMMAND_RESPONSE,
+                NxtCommand.OPEN_WRITE,
+                ...this.prog,
+                ...this.progSize
+            ));
+        }
+        if (this.fileData.length === 0) {
+            this.fileData = PROGRAM;
+            this.state = FileUploadState.CLOSED;
+            return this.send(Uint8Array.of(NxtResponse.SYSTEM_COMMAND_RESPONSE, NxtCommand.CLOSE, this.handle));
+        }
+        const chunkSize = Math.min(64, this.fileData.length);
+        const ret = this.fileData.slice(0, chunkSize);
+        this.fileData = this.fileData.slice(chunkSize, this.fileData.length);
+        return this.send(Uint8Array.of(NxtResponse.SYSTEM_COMMAND_RESPONSE, NxtCommand.WRITE, this.handle, ...ret));
     }
 
     _getInputValues (port) {
-        return this.send(Uint8Array.of(Ev3Command.DIRECT_COMMAND_REPLY, 0x07, port));
+        return this.send(Uint8Array.of(NxtResponse.DIRECT_COMMAND_REPLY, NxtCommand.GET_INPUT_VALUES, port));
     }
 
     _getOutputValues (port) {
-        return this.send(Uint8Array.of(Ev3Command.DIRECT_COMMAND_REPLY, 0x06, port));
+        return this.send(Uint8Array.of(NxtResponse.DIRECT_COMMAND_REPLY, NxtCommand.GET_OUTPUT_STATE, port));
     }
 
     /**
@@ -315,10 +407,7 @@ class EV3 {
      * @private
      */
     _onConnect () {
-        this._pollingIntervalID = window.setInterval(this._pollValues, this._pollingInterval);
-        this._setInputMode(0, NxtSensor.SOUND_DBA, NxtSensorMode.RAW);
-        this._setInputMode(1, NxtSensor.REFLECTION, NxtSensorMode.RAW);
-        this._setInputMode(2, NxtSensor.TOUCH, NxtSensorMode.BOOLEAN);
+        this._startProgram();
     }
 
     /**
@@ -345,8 +434,8 @@ class EV3 {
         }
         const message = `A${this.numberToNXT(this.angle)}${this.numberToNXT(this.power)}`;
         this.send(Uint8Array.of(
-            Ev3Command.DIRECT_COMMAND_NO_REPLY,
-            0x09,
+            NxtResponse.DIRECT_COMMAND_NO_REPLY,
+            NxtCommand.MESSAGE_WRITE,
             0,
             message.length + 1,
             ...this.writeAsciiZ(message)));
@@ -381,24 +470,52 @@ class EV3 {
         const message = params.message;
         const data = Base64Util.base64ToUint8Array(message);
         this.data.push(...Array.from(data));
-        if (this.data.length > 0) {
-            let len = this.data[0] | (this.data[1] << 8);
-            while (this.data.length >= len + 2) {
-                this.data.splice(0, 2);
-                const packet = this.data.splice(0, len);
-                if (packet.shift() === Ev3Command.DIRECT_REPLY) {
-                    const type = packet.shift();
-                    // Command success
-                    switch (type) {
-                    case 0x07:
-                        if (packet.shift() === 0) {
-                            const port = packet.shift();
-                            this._sensors[port] = packet[8] | (packet[9] << 8);
-                        }
-                        break;
+        let len = this.data[0] | (this.data[1] << 8);
+        while (this.data.length >= len + 2) {
+            this.data.splice(0, 2);
+            const packet = this.data.splice(0, len);
+            console.log(packet);
+            if (packet.shift() === NxtResponse.DIRECT_REPLY) {
+                const type = packet.shift();
+                switch (type) {
+                case NxtCommand.START_PROGRAM:
+                    if (packet.shift() === 0) {
+                        this._runtime.emit('NXT_PROGRAM_EXISTS');
+                        // TODO: make this something the user can change.
+                        this._setInputMode(0, NxtSensor.SOUND_DBA, NxtSensorMode.RAW);
+                        this._setInputMode(1, NxtSensor.REFLECTION, NxtSensorMode.RAW);
+                        this._setInputMode(2, NxtSensor.TOUCH, NxtSensorMode.BOOLEAN);
+                        this._pollingIntervalID = window.setInterval(this._pollValues, this._pollingInterval);
+                    } else {
+                        this._runtime.emit('NXT_PROGRAM_MISSING');
+                        this._uploadProgram();
                     }
-                    len = this.data[0] | (this.data[1] << 8);
+                    break;
+                case NxtCommand.OPEN_WRITE:
+                    if (packet.shift() === 0) {
+                        this.handle = packet.shift();
+                        this._uploadProgram();
+                    }
+                    break;
+                case NxtCommand.WRITE:
+                    if (packet.shift() === 0) {
+                        this._uploadProgram();
+                    }
+                    break;
+                case NxtCommand.CLOSE:
+                    if (packet.shift() === 0) {
+                        this._startProgram();
+                    }
+                    break;
+                case NxtCommand.GET_INPUT_VALUES:
+                    // Command success
+                    if (packet.shift() === 0) {
+                        const port = packet.shift();
+                        this._sensors[port] = packet[8] | (packet[9] << 8);
+                    }
+                    break;
                 }
+                len = this.data[0] | (this.data[1] << 8);
             }
         }
     }
@@ -528,7 +645,7 @@ class Scratch3Ev3Blocks {
                     blockType: BlockType.COMMAND,
                     arguments: {
                         ANGLE: {
-                            type: ArgumentType.NUMBER,
+                            type: ArgumentType.ANGLE,
                             defaultValue: 0
                         }
                     }
@@ -751,22 +868,22 @@ class Scratch3Ev3Blocks {
     _forEachMotor (motorID, callback) {
         let motors;
         switch (motorID) {
-        case 0:
-            motors = [0];
-            break;
-        case 1:
-            motors = [1];
-            break;
-        case 2:
-            motors = [2];
-            break;
-        case 3:
-            motors = [3];
-            break;
-        default:
-            log.warn(`Invalid motor ID: ${motorID}`);
-            motors = [];
-            break;
+            case 0:
+                motors = [0];
+                break;
+            case 1:
+                motors = [1];
+                break;
+            case 2:
+                motors = [2];
+                break;
+            case 3:
+                motors = [3];
+                break;
+            default:
+                log.warn(`Invalid motor ID: ${motorID}`);
+                motors = [];
+                break;
         }
         for (const index of motors) {
             callback(index);

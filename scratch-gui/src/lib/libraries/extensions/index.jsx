@@ -159,9 +159,9 @@ export default [
         smallPeripheralImage: ev3MenuImage,
         connectingMessage: (
             <FormattedMessage
-                defaultMessage="Connecting. Make sure the pin on your EV3 is set to 1234."
-                description="Message to help people connect to their EV3. Must note the PIN should be 1234."
-                id="gui.extension.ev3.connectingMessage"
+                defaultMessage="Connecting. Make sure the pin on your NXT is set to 1234."
+                description="Message to help people connect to their NXT. Must note the PIN should be 1234."
+                id="gui.extension.nxt.connectingMessage"
             />
         ),
         helpLink: 'https://scratch.mit.edu/ev3'
