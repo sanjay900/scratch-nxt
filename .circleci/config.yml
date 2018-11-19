@@ -30,8 +30,8 @@ jobs:
               # fallback to using the latest cache if no exact match is found
               - v1-dependencies-
         - run: ls
-        
-        - run: first-build.sh
+
+        - run: ./first-build.sh
 
         - save_cache:
               paths:
