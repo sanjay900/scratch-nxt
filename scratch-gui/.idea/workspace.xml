@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e17323fb-1d83-4083-954a-7bdd9f4499f4" name="Default Changelist" comment="Change circleci config" />
+    <list default="true" id="e17323fb-1d83-4083-954a-7bdd9f4499f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scratch-vm/src/extensions/scratch3_nxt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch-vm/src/extensions/scratch3_nxt/index.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,16 +51,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="17" />
-          <entry key="jsx" value="3620" />
-          <entry key="txt" value="122" />
+          <entry key="jsx" value="3881" />
+          <entry key="txt" value="206" />
           <entry key="yml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="17" />
-          <entry key="JSX Harmony" value="3620" />
-          <entry key="PLAIN_TEXT" value="122" />
+          <entry key="JSX Harmony" value="3881" />
+          <entry key="PLAIN_TEXT" value="206" />
           <entry key="YAML" value="12" />
         </counts>
       </usages-collector>
@@ -64,11 +68,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="654">
+              <caret line="218" column="62" lean-forward="true" selection-start-line="218" selection-start-column="62" selection-end-line="218" selection-end-column="62" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -79,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/connection-modal/auto-scanning-step.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="-397">
               <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
             </state>
           </provider>
@@ -109,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/connection-modal.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="141" column="56" lean-forward="true" selection-start-line="141" selection-start-column="56" selection-end-line="141" selection-end-column="56" />
+            <state relative-caret-position="1647">
+              <caret line="118" column="73" selection-start-line="118" selection-start-column="73" selection-end-line="118" selection-end-column="73" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -149,7 +153,14 @@
       <find>ActionMenu</find>
       <find>select</find>
       <find>props</find>
+      <find>motor</find>
+      <find>third</find>
+      <find>this.state.va</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Port</replace>
+      <replace>this.state.third</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/</dir>
     </dirStrings>
@@ -172,9 +183,9 @@
         <option value="$PROJECT_DIR$/src/components/connection-modal/connection-modal.jsx" />
         <option value="$PROJECT_DIR$/src/components/connection-modal/connection-modal.css" />
         <option value="$PROJECT_DIR$/src/components/connection-modal/connected-step.jsx" />
+        <option value="$PROJECT_DIR$/.circleci/config.yml" />
         <option value="$PROJECT_DIR$/src/containers/connection-modal.jsx" />
         <option value="$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx" />
-        <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
   </component>
@@ -212,6 +223,11 @@
               <item name="scratch-gui" type="b2602c69:ProjectViewProjectNode" />
               <item name="scratch-gui" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="scratch-gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scratch-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -223,7 +239,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542618692009" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542622058993" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../scratch-vm" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -262,7 +278,7 @@
       <workItem from="1541054684948" duration="1932000" />
       <workItem from="1541064812573" duration="363000" />
       <workItem from="1541149027545" duration="807000" />
-      <workItem from="1542526838474" duration="20857000" />
+      <workItem from="1542526838474" duration="22045000" />
     </task>
     <task id="LOCAL-00001" summary="Mostly complete implementation of settings, circleci config">
       <created>1542615485281</created>
@@ -334,11 +350,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542617685503</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="instead of alerts, check the users config as they type and show a message.">
+      <created>1542620970397</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1542620970397</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23959000" />
+    <option name="totallyTimeSpent" value="25147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1918" y="-1" width="1924" height="1060" extended-state="0" />
@@ -386,7 +409,8 @@
     <MESSAGE value="Push circleci config" />
     <MESSAGE value="Change caching for circleci config" />
     <MESSAGE value="Change circleci config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change circleci config" />
+    <MESSAGE value="instead of alerts, check the users config as they type and show a message." />
+    <option name="LAST_COMMIT_MESSAGE" value="instead of alerts, check the users config as they type and show a message." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -639,20 +663,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/connection-modal.jsx">
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="141" column="56" lean-forward="true" selection-start-line="141" selection-start-column="56" selection-end-line="141" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="364">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/connection-modal/connection-modal.jsx">
+    <entry file="file://$PROJECT_DIR$/prune-gh-pages.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        <state relative-caret-position="-77" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/connection-modal/auto-scanning-step.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-397">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="218" column="62" lean-forward="true" selection-start-line="218" selection-start-column="62" selection-end-line="218" selection-end-column="62" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -669,29 +702,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/connection-modal/auto-scanning-step.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/connection-modal/connection-modal.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+        <state relative-caret-position="695">
+          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/containers/connection-modal.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prune-gh-pages.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="1647">
+          <caret line="118" column="73" selection-start-line="118" selection-start-column="73" selection-end-line="118" selection-end-column="73" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

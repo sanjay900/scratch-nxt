@@ -364,6 +364,33 @@ class EV3 {
         return this.send(Uint8Array.of(NxtResponse.DIRECT_COMMAND_REPLY, NxtCommand.GET_OUTPUT_STATE, port));
     }
 
+    _setOtherPower (power) {
+        if (power === 0) {
+            return this.send(Uint8Array.of(
+                NxtResponse.DIRECT_COMMAND_NO_REPLY,
+                NxtCommand.GET_OUTPUT_STATE,
+                parseInt(this.third, 10) - 1,
+                0,
+                0x00,
+                0x00,
+                0,
+                0x00,
+                0
+            ));
+        }
+        return this.send(Uint8Array.of(
+            NxtResponse.DIRECT_COMMAND_NO_REPLY,
+            NxtCommand.GET_OUTPUT_STATE,
+            parseInt(this.third, 10) - 1,
+            power,
+            0x01,
+            0x00,
+            0,
+            0x20,
+            0
+        ));
+    }
+
     /**
      * Genrates direct commands that are sent to the EV3 as a single or compounded byte arrays.
      * See 'EV3 Communication Developer Kit', section 4, page 24 at
@@ -669,6 +696,21 @@ class Scratch3Ev3Blocks {
                     }
                 },
                 {
+                    opcode: 'motorOtherSetPower',
+                    text: formatMessage({
+                        id: 'nxt.motorOtherSetPower',
+                        default: 'set other motor power to [POWER] %',
+                        description: 'set the power for the non driving motor to some value'
+                    }),
+                    blockType: BlockType.COMMAND,
+                    arguments: {
+                        POWER: {
+                            type: ArgumentType.NUMBER,
+                            defaultValue: 100
+                        }
+                    }
+                },
+                {
                     opcode: 'whenButtonPressed',
                     text: formatMessage({
                         id: 'nxt.whenButtonPressed',
@@ -797,6 +839,10 @@ class Scratch3Ev3Blocks {
         if (this._peripheral.steeringConfig === SteeringConfig.TANK) {
             this._peripheral.power = this._peripheral.tmpPower;
         }
+    }
+
+    motorOtherSetPower (args) {
+        this._peripheral._setOtherPower(MathUtil.clamp(Cast.toNumber(args.POWER), -100, 100));
     }
 
     motorSetAngle (args) {
