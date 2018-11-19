@@ -38,8 +38,6 @@ jobs:
 
                         git clone $CIRCLE_REPOSITORY_URL out
 
-                        echo $CIRCLE_REPOSITORY_URL
-
                         cd out
                         git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
                         git rm -rf .
@@ -51,7 +49,7 @@ jobs:
                         cd ../scratch-gui
                         npm install
                         sudo npm link scratch-vm
-                        npm build
+                        npm run build
                         cd ..
                         cp -a scratch-gui/build/. out/.
 
