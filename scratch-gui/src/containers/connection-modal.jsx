@@ -117,28 +117,6 @@ class ConnectionModal extends React.Component {
     }
 
     handleSetDriveType (driveType, firstMotor, secondMotor, thirdMotor) {
-        if (firstMotor === secondMotor || firstMotor === thirdMotor || secondMotor === thirdMotor) {
-            alert('Invalid configuration, you can not have multiple outputs set to the same port.');
-            return;
-        }
-        if (secondMotor === '4') {
-            if (firstMotor === '1' || firstMotor === '2' || secondMotor === '1' || secondMotor === '2') {
-                alert('Invalid configuration, you can not have multiple outputs set to the same port.');
-                return;
-            }
-        }
-        if (secondMotor === '5') {
-            if (firstMotor === '1' || firstMotor === '3' || secondMotor === '1' || secondMotor === '3') {
-                alert('Invalid configuration, you can not have multiple outputs set to the same port.');
-                return;
-            }
-        }
-        if (secondMotor === '6') {
-            if (firstMotor === '2' || firstMotor === '3' || secondMotor === '2' || secondMotor === '3') {
-                alert('Invalid configuration, you can not have multiple outputs set to the same port.');
-                return;
-            }
-        }
         this.props.vm.runtime.emit('NXT_MOTOR_CONFIG', {driveType, firstMotor, secondMotor, thirdMotor});
         this.setState({
             phase: PHASES.connected

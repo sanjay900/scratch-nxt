@@ -17,7 +17,8 @@ class UploadingStep extends React.Component {
             driveType: SteeringConfig.FRONT_STEERING,
             firstPort: '2',
             secondPort: '3',
-            thirdPort: '1'
+            thirdPort: '1',
+            validConfig: true
         };
         this.handleSetDriveType = this.handleSetDriveType.bind(this);
         this.handleSetFirstPort = this.handleSetFirstPort.bind(this);
@@ -26,23 +27,56 @@ class UploadingStep extends React.Component {
         this.writeConfig = this.writeConfig.bind(this);
     }
 
+    checkPorts () {
+        if (this.state.firstPort === this.state.secondPort ||
+            this.state.firstPort === this.state.thirdPort ||
+            this.state.secondPort === this.state.thirdPort) {
+            return false;
+        }
+        if (this.state.secondPort === '4') {
+            if (this.state.firstPort === '1' ||
+                this.state.firstPort === '2' ||
+                this.state.secondPort === '1' ||
+                this.state.secondPort === '2') {
+                return false;
+            }
+        }
+        if (this.state.secondPort === '5') {
+            if (this.state.firstPort === '1' ||
+                this.state.firstPort === '3' ||
+                this.state.secondPort === '1' ||
+                this.state.secondPort === '3') {
+                return false;
+            }
+        }
+        if (this.state.secondPort === '6') {
+            if (this.state.firstPort === '2' ||
+                this.state.firstPort === '3' ||
+                this.state.secondPort === '2' ||
+                this.state.secondPort === '3') {
+                return false;
+            }
+        }
+        return true;
+    }
+
     handleSetDriveType (event) {
-        this.setState({driveType: event.target.value});
+        this.setState({driveType: event.target.value, validConfig: this.checkPorts()});
         if (this.state.secondPort > '3') {
             this.setState({secondPort: '0'});
         }
     }
 
     handleSetFirstPort (event) {
-        this.setState({firstPort: event.target.value});
+        this.setState({firstPort: event.target.value, validConfig: this.checkPorts()});
     }
 
     handleSetSecondPort (event) {
-        this.setState({secondPort: event.target.value});
+        this.setState({secondPort: event.target.value, validConfig: this.checkPorts()});
     }
 
     handleSetThirdPort (event) {
-        this.setState({thirdPort: event.target.value});
+        this.setState({thirdPort: event.target.value, validConfig: this.checkPorts()});
     }
 
     writeConfig () {
@@ -205,6 +239,7 @@ class UploadingStep extends React.Component {
                     </label>
                     {this.state.driveType === SteeringConfig.FRONT_STEERING && this.steeringOptions()}
                     {this.state.driveType === SteeringConfig.TANK && this.tankOptions()}
+                    {!this.state.validConfig && 'The ports you have selected are conflicting. Please fix this.'}
                     <Dots
                         counter={2}
                         total={4}
@@ -212,7 +247,7 @@ class UploadingStep extends React.Component {
                     <div className={styles.segmentedButton}>
                         <button
                             className={styles.connectionButton}
-                            disabled={this.props.shouldUpload}
+                            disabled={this.props.shouldUpload && this.state.validConfig}
                             onClick={this.writeConfig}
                         >
                             {this.props.shouldUpload ? 'Uploading Control Program, please wait...' : 'Save Settings'}
