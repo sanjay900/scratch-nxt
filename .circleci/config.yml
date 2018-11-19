@@ -46,11 +46,11 @@ jobs:
                         cd ..
                         cd scratch-vm
                         npm install
-                        npm link
+                        sudo npm link
                         #npm run watch
                         cd ../scratch-gui
                         npm install
-                        npm link scratch-vm
+                        sudo npm link scratch-vm
                         npm build
                         cd ..
                         cp -a scratch-gui/build/. out/.
