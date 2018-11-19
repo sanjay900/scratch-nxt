@@ -25,13 +25,20 @@ jobs:
         # Download and cache dependencies
         - restore_cache:
               keys:
-              - v1-dependencies-{{ checksum "package.json" }}
+              - v1-dependencies-{{ checksum "scratch-gui/package.json" }}
+              - v1-dependencies-{{ checksum "scratch-vm/package.json" }}
               # fallback to using the latest cache if no exact match is found
               - v1-dependencies-
-
+        - run: ls
+        
         - run: first-build.sh
 
         - save_cache:
               paths:
-              - node_modules
-              key: v1-dependencies-{{ checksum "package.json" }}
+              - scratch-vm/node_modules
+              key: v1-dependencies-{{ checksum "scratch-vm/package.json" }}
+
+        - save_cache:
+              paths:
+              - scratch-gui/node_modules
+              key: v1-dependencies-{{ checksum "scratch-gui/package.json" }}
