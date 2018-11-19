@@ -5,6 +5,8 @@ if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
 
     git clone $CIRCLE_REPOSITORY_URL out
 
+    echo $CIRCLE_REPOSITORY_URL
+
     cd out
     git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
     git rm -rf .
@@ -17,7 +19,7 @@ if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
     npm install
     npm link scratch-vm
     npm build
-    cd ../
+    cd ..
     cp -a scratch-gui/build/. out/.
 
     mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
