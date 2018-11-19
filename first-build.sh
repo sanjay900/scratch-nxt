@@ -2,7 +2,7 @@
 cd scratch-vm
 npm install
 npm link
-npm run watch
+#npm run watch
 cd ../scratch-gui
 npm install
 npm link scratch-vm

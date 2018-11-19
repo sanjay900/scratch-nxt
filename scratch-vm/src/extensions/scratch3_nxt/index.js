@@ -98,7 +98,7 @@ const FileUploadState = {
     OPEN: 0x01
 };
 
-const SteeringType = ['TANK', 'Front Steering'];
+const SteeringType = ['TANK', 'FRONT_STEERING'];
 
 class EV3 {
 
@@ -159,7 +159,8 @@ class EV3 {
          * @private
          */
         this._pollingCounter = 0;
-        this.power = 100;
+        this.power = 0;
+        this.tmpPower = 100;
         this.angle = 0;
         this.steeringConfig = SteeringConfig.FRONT_STEERING;
 
@@ -213,7 +214,10 @@ class EV3 {
     }
 
     writeConfig () {
-        const message = `B${this.steeringConfig}23`;
+        let message = `B${this.steeringConfig}25`;
+        if (this.steeringConfig === SteeringConfig.TANK) {
+            message = `B${this.steeringConfig}23`;
+        }
         this.send(Uint8Array.of(
             NxtResponse.DIRECT_COMMAND_NO_REPLY,
             NxtCommand.MESSAGE_WRITE,
@@ -254,7 +258,6 @@ class EV3 {
 
     stopAllMotors () {
         this.power = 0;
-        this.angle = 0;
     }
 
 
@@ -432,7 +435,8 @@ class EV3 {
         for (let i = 0; i < 3; i++) {
             this._getInputValues(i);
         }
-        const message = `A${this.numberToNXT(this.angle)}${this.numberToNXT(this.power)}`;
+        const powerMul = this.steeringConfig === SteeringConfig.FRONT_STEERING ? -1 : 1;
+        const message = `A${this.numberToNXT(this.angle)}${this.numberToNXT(powerMul * this.power)}`;
         this.send(Uint8Array.of(
             NxtResponse.DIRECT_COMMAND_NO_REPLY,
             NxtCommand.MESSAGE_WRITE,
@@ -585,10 +589,19 @@ class Scratch3Ev3Blocks {
             showStatusButton: true,
             blocks: [
                 {
+                    opcode: 'stopAllMotors',
+                    text: formatMessage({
+                        id: 'nxt.stopAllMotors',
+                        default: 'stop',
+                        description: 'Stop'
+                    }),
+                    blockType: BlockType.COMMAND
+                },
+                {
                     opcode: 'motorTurnClockwise',
                     text: formatMessage({
                         id: 'nxt.motorTurnClockwise',
-                        default: 'Turn Left',
+                        default: 'turn left',
                         description: 'Turn the robot left'
                     }),
                     blockType: BlockType.COMMAND
@@ -597,7 +610,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorTurnCounterClockwise',
                     text: formatMessage({
                         id: 'nxt.motorTurnCounterClockwise',
-                        default: 'Turn Right',
+                        default: 'turn right',
                         description: 'turn the robot right'
                     }),
                     blockType: BlockType.COMMAND
@@ -606,7 +619,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorForwards',
                     text: formatMessage({
                         id: 'nxt.motorForwards',
-                        default: 'Drive forwards',
+                        default: 'drive forwards',
                         description: 'drive forwards'
                     }),
                     blockType: BlockType.COMMAND
@@ -615,7 +628,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorBackwards',
                     text: formatMessage({
                         id: 'nxt.motorBackwards',
-                        default: 'Drive backwards',
+                        default: 'drive backwards',
                         description: 'drive backwards'
                     }),
                     blockType: BlockType.COMMAND
@@ -624,7 +637,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorSetPower',
                     text: formatMessage({
                         id: 'nxt.motorSetPower',
-                        default: 'set power [POWER] %',
+                        default: 'set power to [POWER] %',
                         description: 'set the driving power to some value'
                     }),
                     blockType: BlockType.COMMAND,
@@ -639,7 +652,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'motorSetAngle',
                     text: formatMessage({
                         id: 'nxt.motorSetAngle',
-                        default: 'set angle [ANGLE] degrees',
+                        default: 'set angle to [ANGLE] degrees',
                         description: 'set the driving angle to some value'
                     }),
                     blockType: BlockType.COMMAND,
@@ -709,7 +722,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'buttonPressed',
                     text: formatMessage({
                         id: 'nxt.buttonPressed',
-                        default: 'Bumper Hit?',
+                        default: 'bumper hit?',
                         description: 'Has the bumpter been hit?'
                     }),
                     blockType: BlockType.BOOLEAN
@@ -718,7 +731,7 @@ class Scratch3Ev3Blocks {
                     opcode: 'getBrightness',
                     text: formatMessage({
                         id: 'nxt.getBrightness',
-                        default: 'Brightness',
+                        default: 'brightness',
                         description: 'gets measured brightness'
                     }),
                     blockType: BlockType.REPORTER
@@ -761,13 +774,21 @@ class Scratch3Ev3Blocks {
     }
 
     motorForwards () {
-        this._peripheral.power = Math.abs(this._peripheral.power);
-        this._peripheral.angle = 0;
+        this._peripheral.power = Math.abs(this._peripheral.tmpPower);
+        if (this._peripheral.steeringConfig === SteeringConfig.TANK) {
+            this._peripheral.angle = 0;
+        }
+    }
+
+    stopAllMotors () {
+        this._peripheral.power = 0;
     }
 
     motorBackwards () {
-        this._peripheral.power = -Math.abs(this._peripheral.power);
-        this._peripheral.angle = 0;
+        this._peripheral.power = -Math.abs(this._peripheral.tmpPower);
+        if (this._peripheral.steeringConfig === SteeringConfig.TANK) {
+            this._peripheral.angle = 0;
+        }
     }
 
     setMotorConfig (args) {
@@ -777,18 +798,24 @@ class Scratch3Ev3Blocks {
 
     motorTurnClockwise () {
         this._peripheral.angle = -45;
+        if (this._peripheral.steeringConfig === SteeringConfig.TANK) {
+            this._peripheral.power = this._peripheral.tmpPower;
+        }
     }
 
     motorTurnCounterClockwise () {
         this._peripheral.angle = 45;
+        if (this._peripheral.steeringConfig === SteeringConfig.TANK) {
+            this._peripheral.power = this._peripheral.tmpPower;
+        }
     }
 
     motorSetAngle (args) {
-        this._peripheral.power = MathUtil.clamp(Cast.toNumber(args.ANGLE), -90, 90);
+        this._peripheral.angle = MathUtil.clamp(Cast.toNumber(args.ANGLE), -90, 90);
     }
 
     motorSetPower (args) {
-        this._peripheral.power = MathUtil.clamp(Cast.toNumber(args.POWER), -100, 100);
+        this._peripheral.tmpPower = this._peripheral.power = MathUtil.clamp(Cast.toNumber(args.POWER), -100, 100);
     }
 
     getMotorPosition (args) {
