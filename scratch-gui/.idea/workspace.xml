@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e17323fb-1d83-4083-954a-7bdd9f4499f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scratch-vm/src/extensions/scratch3_nxt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch-vm/src/extensions/scratch3_nxt/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +32,7 @@
           <entry key="js" value="6" />
           <entry key="json" value="4" />
           <entry key="jsx" value="33" />
+          <entry key="md" value="1" />
           <entry key="sh" value="1" />
           <entry key="yml" value="1" />
         </counts>
@@ -45,6 +44,7 @@
           <entry key="JSON" value="4" />
           <entry key="JSX Harmony" value="33" />
           <entry key="JavaScript" value="6" />
+          <entry key="Markdown" value="1" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -68,7 +68,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
@@ -76,6 +76,16 @@
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -239,7 +249,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542667443109" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542669017124" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../scratch-vm" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -278,7 +288,7 @@
       <workItem from="1541054684948" duration="1932000" />
       <workItem from="1541064812573" duration="363000" />
       <workItem from="1541149027545" duration="807000" />
-      <workItem from="1542526838474" duration="22434000" />
+      <workItem from="1542526838474" duration="23335000" />
     </task>
     <task id="LOCAL-00001" summary="Mostly complete implementation of settings, circleci config">
       <created>1542615485281</created>
@@ -361,7 +371,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25536000" />
+    <option name="totallyTimeSpent" value="26437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1918" y="-1" width="1924" height="1060" extended-state="0" />
@@ -413,14 +423,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="instead of alerts, check the users config as they type and show a message." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-462" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/translations/messages/src/lib/libraries/extensions/index.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -719,6 +721,14 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
