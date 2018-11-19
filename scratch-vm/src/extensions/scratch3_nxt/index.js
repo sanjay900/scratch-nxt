@@ -110,7 +110,7 @@ class EV3 {
          */
         this._runtime = runtime;
         this._runtime.on('PROJECT_STOP_ALL', this.stopAll.bind(this));
-        this._runtime.on('NXT_MOTOR_CONFIG', steeringConfig => (this.steeringConfig = steeringConfig));
+        this._runtime.on('NXT_MOTOR_CONFIG', this.assign.bind(this));
         this.data = [];
 
         /**
@@ -200,6 +200,15 @@ class EV3 {
         return this._sensors[0];
     }
 
+    assign (data) {
+        const {driveType, firstMotor, secondMotor, thirdMotor} = data;
+        this.steeringConfig = driveType;
+        this.first = firstMotor;
+        this.second = secondMotor;
+        this.third = thirdMotor;
+        this.writeConfig();
+    }
+
     writeAsciiZ (message) {
         const data = [];
         for (let i = 0; i < message.length; i++) {
@@ -214,10 +223,8 @@ class EV3 {
     }
 
     writeConfig () {
-        let message = `B${this.steeringConfig}25`;
-        if (this.steeringConfig === SteeringConfig.TANK) {
-            message = `B${this.steeringConfig}23`;
-        }
+        const message = `B${this.steeringConfig}${this.first}${this.second}`;
+        console.log(message);
         this.send(Uint8Array.of(
             NxtResponse.DIRECT_COMMAND_NO_REPLY,
             NxtCommand.MESSAGE_WRITE,
@@ -308,7 +315,6 @@ class EV3 {
      */
     send (message) {
         if (!this.isConnected()) return Promise.resolve();
-        console.log('SENT', message);
         return this._bt.sendMessage({
             message: Base64Util.uint8ArrayToBase64(Uint8Array.of(message.length, message.length >> 8, ...message)),
             encoding: 'base64'
@@ -478,7 +484,6 @@ class EV3 {
         while (this.data.length >= len + 2) {
             this.data.splice(0, 2);
             const packet = this.data.splice(0, len);
-            console.log(packet);
             if (packet.shift() === NxtResponse.DIRECT_REPLY) {
                 const type = packet.shift();
                 switch (type) {
@@ -659,22 +664,6 @@ class Scratch3Ev3Blocks {
                     arguments: {
                         ANGLE: {
                             type: ArgumentType.ANGLE,
-                            defaultValue: 0
-                        }
-                    }
-                },
-                {
-                    opcode: 'setMotorConfig',
-                    text: formatMessage({
-                        id: 'nxt.setMotorConfig',
-                        default: 'set vehicle type to [TYPE]',
-                        description: 'set the vehicle type to a specified type'
-                    }),
-                    blockType: BlockType.COMMAND,
-                    arguments: {
-                        TYPE: {
-                            type: ArgumentType.STRING,
-                            menu: 'steering',
                             defaultValue: 0
                         }
                     }
@@ -895,22 +884,22 @@ class Scratch3Ev3Blocks {
     _forEachMotor (motorID, callback) {
         let motors;
         switch (motorID) {
-            case 0:
-                motors = [0];
-                break;
-            case 1:
-                motors = [1];
-                break;
-            case 2:
-                motors = [2];
-                break;
-            case 3:
-                motors = [3];
-                break;
-            default:
-                log.warn(`Invalid motor ID: ${motorID}`);
-                motors = [];
-                break;
+        case 0:
+            motors = [0];
+            break;
+        case 1:
+            motors = [1];
+            break;
+        case 2:
+            motors = [2];
+            break;
+        case 3:
+            motors = [3];
+            break;
+        default:
+            log.warn(`Invalid motor ID: ${motorID}`);
+            motors = [];
+            break;
         }
         for (const index of motors) {
             callback(index);

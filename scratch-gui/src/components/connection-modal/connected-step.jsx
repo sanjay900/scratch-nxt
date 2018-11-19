@@ -47,6 +47,19 @@ const ConnectedStep = props => (
                         id="gui.connection.disconnect"
                     />
                 </button>
+                {
+                    props.extensionId === 'nxt' &&
+                    <button
+                        className={styles.connectionButton}
+                        onClick={props.onConfig}
+                    >
+                        <FormattedMessage
+                            defaultMessage="Change NXT Settings"
+                            description="Button to change nxt settings"
+                            id="nxt.settings"
+                        />
+                    </button>
+                }
                 <button
                     className={styles.connectionButton}
                     onClick={props.onCancel}
@@ -63,7 +76,9 @@ const ConnectedStep = props => (
 );
 
 ConnectedStep.propTypes = {
+    extensionId: PropTypes.string.isRequired,
     onCancel: PropTypes.func,
+    onConfig: PropTypes.func,
     onDisconnect: PropTypes.func,
     peripheralImage: PropTypes.string.isRequired
 };

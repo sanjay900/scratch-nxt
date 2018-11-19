@@ -17,6 +17,7 @@ class ConnectionModal extends React.Component {
         super(props);
         bindAll(this, [
             'handleScanning',
+            'handleConfig',
             'handleCancel',
             'handleConnected',
             'handleConnecting',
@@ -104,7 +105,6 @@ class ConnectionModal extends React.Component {
     }
 
     uploadNXTProgram (shouldUpload) {
-        console.log("UPLOAD", shouldUpload);
         this.setState({
             phase: PHASES.uploading,
             uploading: shouldUpload
@@ -116,8 +116,30 @@ class ConnectionModal extends React.Component {
         });
     }
 
-    handleSetDriveType (driveType) {
-        this.props.vm.runtime.emit('NXT_MOTOR_CONFIG', driveType);
+    handleSetDriveType (driveType, firstMotor, secondMotor, thirdMotor) {
+        if (firstMotor === secondMotor || firstMotor === thirdMotor || secondMotor === thirdMotor) {
+            alert('Invalid configuration, you can not have multiple outputs set to the same port.');
+            return;
+        }
+        if (secondMotor === '4') {
+            if (firstMotor === '1' || firstMotor === '2' || secondMotor === '1' || secondMotor === '2') {
+                alert('Invalid configuration, you can not have multiple outputs set to the same port.');
+                return;
+            }
+        }
+        if (secondMotor === '5') {
+            if (firstMotor === '1' || firstMotor === '3' || secondMotor === '1' || secondMotor === '3') {
+                alert('Invalid configuration, you can not have multiple outputs set to the same port.');
+                return;
+            }
+        }
+        if (secondMotor === '6') {
+            if (firstMotor === '2' || firstMotor === '3' || secondMotor === '2' || secondMotor === '3') {
+                alert('Invalid configuration, you can not have multiple outputs set to the same port.');
+                return;
+            }
+        }
+        this.props.vm.runtime.emit('NXT_MOTOR_CONFIG', {driveType, firstMotor, secondMotor, thirdMotor});
         this.setState({
             phase: PHASES.connected
         });
@@ -147,6 +169,10 @@ class ConnectionModal extends React.Component {
         });
     }
 
+    handleConfig () {
+        return this.uploadNXTProgram(false);
+    }
+
     render () {
         return (
             <ConnectionModalComponent
@@ -163,6 +189,7 @@ class ConnectionModal extends React.Component {
                 useAutoScan={this.state.extension.useAutoScan}
                 vm={this.props.vm}
                 onCancel={this.handleCancel}
+                onConfig={this.handleConfig}
                 onConnected={this.handleConnected}
                 onConnecting={this.handleConnecting}
                 onDisconnect={this.handleDisconnect}
