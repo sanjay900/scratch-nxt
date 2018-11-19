@@ -267,6 +267,7 @@ class EV3 {
 
     stopAllMotors () {
         this.power = 0;
+        this._setOtherPower(0);
     }
 
 
@@ -824,6 +825,7 @@ class Scratch3Ev3Blocks {
 
     stopAllMotors () {
         this._peripheral.power = 0;
+        this._peripheral._setOtherPower(0);
     }
 
     motorBackwards () {
