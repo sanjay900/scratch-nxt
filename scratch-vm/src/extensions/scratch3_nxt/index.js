@@ -650,6 +650,15 @@ class Scratch3Ev3Blocks {
                     blockType: BlockType.COMMAND
                 },
                 {
+                    opcode: 'motorCenter',
+                    text: formatMessage({
+                        id: 'nxt.motorCenter',
+                        default: 'go straight',
+                        description: 'make the robot go straight'
+                    }),
+                    blockType: BlockType.COMMAND
+                },
+                {
                     opcode: 'motorForwards',
                     text: formatMessage({
                         id: 'nxt.motorForwards',
@@ -822,6 +831,9 @@ class Scratch3Ev3Blocks {
         if (this._peripheral.steeringConfig === SteeringConfig.TANK) {
             this._peripheral.angle = 0;
         }
+    }
+    motorCenter () {
+        this._peripheral.angle = 0;
     }
 
     setMotorConfig (args) {
