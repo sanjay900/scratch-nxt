@@ -180,6 +180,7 @@ class EV3 {
         this.prog = this.writeAsciiZ('SteeringControl.rxe'.padEnd(19, '\0'));
         this.progSize = this.writeLong(PROGRAM.length);
         this.handle = 0;
+        this.invert = false;
 
 
     }
@@ -201,11 +202,12 @@ class EV3 {
     }
 
     assign (data) {
-        const {driveType, firstMotor, secondMotor, thirdMotor} = data;
+        const {driveType, firstMotor, secondMotor, thirdMotor, invert} = data;
         this.steeringConfig = driveType;
         this.first = firstMotor;
         this.second = secondMotor;
         this.third = thirdMotor;
+        this.invert = invert;
         this.writeConfig();
     }
 
@@ -468,7 +470,7 @@ class EV3 {
         for (let i = 0; i < 3; i++) {
             this._getInputValues(i);
         }
-        const powerMul = this.steeringConfig === SteeringConfig.FRONT_STEERING ? -1 : 1;
+        const powerMul = this.invert ? -1 : 1;
         const message = `A${this.numberToNXT(this.angle)}${this.numberToNXT(powerMul * this.power)}`;
         this.send(Uint8Array.of(
             NxtResponse.DIRECT_COMMAND_NO_REPLY,

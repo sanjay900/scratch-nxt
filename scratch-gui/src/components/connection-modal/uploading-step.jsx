@@ -18,13 +18,15 @@ class UploadingStep extends React.Component {
             firstPort: '2',
             secondPort: '3',
             thirdPort: '1',
+            invert: false,
             validConfig: true
         };
         this.handleSetDriveType = this.handleSetDriveType.bind(this);
         this.handleSetFirstPort = this.handleSetFirstPort.bind(this);
         this.handleSetSecondPort = this.handleSetSecondPort.bind(this);
         this.handleSetThirdPort = this.handleSetThirdPort.bind(this);
-        this.writeConfig = this.writeConfig.bind(this);
+        this.handleInvert = this.handleInvert.bind(this);
+        this.handleConfigWrite = this.handleConfigWrite.bind(this);
     }
 
     checkPorts () {
@@ -60,11 +62,12 @@ class UploadingStep extends React.Component {
         return true;
     }
 
+    handleInvert (event) {
+        this.setState({invert: event.target.checked});
+    }
+
     handleSetDriveType (event) {
         this.setState({driveType: event.target.value, validConfig: this.checkPorts()});
-        if (this.state.secondPort > '3') {
-            this.setState({secondPort: '0'});
-        }
     }
 
     handleSetFirstPort (event) {
@@ -79,12 +82,13 @@ class UploadingStep extends React.Component {
         this.setState({thirdPort: event.target.value, validConfig: this.checkPorts()});
     }
 
-    writeConfig () {
+    handleConfigWrite () {
         this.props.onSetDriveType(
             this.state.driveType,
             this.state.firstPort,
             this.state.secondPort,
-            this.state.thirdPort
+            this.state.thirdPort,
+            this.state.invert
         );
     }
 
@@ -239,6 +243,15 @@ class UploadingStep extends React.Component {
                     </label>
                     {this.state.driveType === SteeringConfig.FRONT_STEERING && this.steeringOptions()}
                     {this.state.driveType === SteeringConfig.TANK && this.tankOptions()}
+                    <label>
+                        {'Invert Driving Direction'}
+                        <input
+                            checked={this.state.invert}
+                            name="invert"
+                            type="checkbox"
+                            onChange={this.handleInvert}
+                        />
+                    </label>
                     {!this.state.validConfig && 'The ports you have selected are conflicting. Please fix this.'}
                     <Dots
                         counter={2}
@@ -248,7 +261,7 @@ class UploadingStep extends React.Component {
                         <button
                             className={styles.connectionButton}
                             disabled={this.props.shouldUpload && this.state.validConfig}
-                            onClick={this.writeConfig}
+                            onClick={this.handleConfigWrite}
                         >
                             {this.props.shouldUpload ? 'Uploading Control Program, please wait...' : 'Save Settings'}
                         </button>

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e17323fb-1d83-4083-954a-7bdd9f4499f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch-vm/src/extensions/scratch3_nxt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch-vm/src/extensions/scratch3_nxt/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +51,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="17" />
-          <entry key="jsx" value="3881" />
+          <entry key="jsx" value="4031" />
           <entry key="txt" value="206" />
           <entry key="yml" value="12" />
         </counts>
@@ -59,7 +59,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="17" />
-          <entry key="JSX Harmony" value="3881" />
+          <entry key="JSX Harmony" value="4031" />
           <entry key="PLAIN_TEXT" value="206" />
           <entry key="YAML" value="12" />
         </counts>
@@ -68,11 +68,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="218" column="62" lean-forward="true" selection-start-line="218" selection-start-column="62" selection-end-line="218" selection-end-column="62" />
+            <state relative-caret-position="504">
+              <caret line="90" column="29" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -113,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/connection-modal.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1647">
+            <state relative-caret-position="938">
               <caret line="118" column="73" selection-start-line="118" selection-start-column="73" selection-end-line="118" selection-end-column="73" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -239,7 +239,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542622058993" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542667443109" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../scratch-vm" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -278,7 +278,7 @@
       <workItem from="1541054684948" duration="1932000" />
       <workItem from="1541064812573" duration="363000" />
       <workItem from="1541149027545" duration="807000" />
-      <workItem from="1542526838474" duration="22045000" />
+      <workItem from="1542526838474" duration="22434000" />
     </task>
     <task id="LOCAL-00001" summary="Mostly complete implementation of settings, circleci config">
       <created>1542615485281</created>
@@ -361,7 +361,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25147000" />
+    <option name="totallyTimeSpent" value="25536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1918" y="-1" width="1924" height="1060" extended-state="0" />
@@ -682,16 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="218" column="62" lean-forward="true" selection-start-line="218" selection-start-column="62" selection-end-line="218" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/connection-modal/connected-step.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -714,8 +704,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/connection-modal.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1647">
+        <state relative-caret-position="938">
           <caret line="118" column="73" selection-start-line="118" selection-start-column="73" selection-end-line="118" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/connection-modal/uploading-step.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="90" column="29" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
